@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite parallel="tests" name="herokuapp" thread-count="2">
+  <test name="loginTestingfirefox">
+  <parameter name="browser" value="firefox"></parameter>
+    <classes>
+      <class name="tests.ValeoTest"/>
+    </classes>
+  </test> 
+  
+   <test name="loginTestingchrome">
+  <parameter name="browser" value="chrome"></parameter>
+    <classes>
+      <class name="tests.ValeoTest"/>
+    </classes>
+  </test>
+</suite> 
